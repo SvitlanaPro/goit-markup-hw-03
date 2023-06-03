@@ -14,14 +14,27 @@
   --font-primary: Roboto, sans-serif;
   --font-secondary: Raleway, sans-serif;
 }
-/* General styles */
+/* ------------General styles------ */
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .section-title {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 72px;
+  margin-left: auto;
+
+
   color: var(--color-navy-blue);
   font-size: 36px;
   line-height: 1.11;
@@ -30,14 +43,24 @@
   text-transform: capitalize;
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* Body */
 body {
   font-family: var(--font-primary);
   color: var(--color-slate);
   background-color: var(--color-white);
 }
-/* Header */
-
+/* ----------Header ---------------*/
+.header {
+  border-bottom: 1px solid;
+  border-bottom-color: var(--color-cornflower);
+}
 /* Logo */
 .logo {
   font-family: var(--font-secondary);
@@ -55,8 +78,25 @@ body {
   color: var(--color-cloud);
 }
 
-/* Navigation */
+/*----------- Navigation -------------*/
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   color: var(--color-navy-blue);
   line-height: 1.5;
@@ -69,8 +109,33 @@ body {
   color: var(--color-ocean);
 }
 
-/* Contacts */
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-item {
+  margin-right: 40px;
+}
+
+/*------------ Contacts---------------- */
 .contacts {
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* .contacts-list-item {
+  margin-right: 40px;
+}
+.contacts-list-item:last-child {
+  margin-right: 0;
+} */
+
+.contacts .contacts-list-item {
   font-style: normal;
 }
 .contact-link {
@@ -79,33 +144,59 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Hero */
-.hero {
-  background-color: var(--color-navy-blue);
+.contacts {
+  margin-left: auto;
 }
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+/*-------------- Hero------------------ */
+background-color: var(--color-navy-blue);
+padding: 188px 0;
+}
+/* .hero .container {
+text-align: center;
+} */
+
 .hero-title {
-  color: var(--color-white);
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
+max-width: 496px;
+color: var(--color-white);
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+margin-top: 0;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 48px;
 }
 .hero-button {
-  font-family: inherit;
-  font-weight: 500;
-  color: var(--color-white);
-  background-color: var(--color-iris);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
+display: block;
+min-width: 169px;
+border: none;
+border-radius: 4px;
+padding: 16px 32px;
+margin-top: 0;
+margin-right: auto;
+margin-bottom: 0;
+margin-left: auto;
+font-family: inherit;
+font-weight: 500;
+color: var(--color-white);
+background-color: var(--color-iris);
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--color-ocean);
+background-color: var(--color-ocean);
 }
-
-/* Our benefits */
+/* -----------Our benefits-------------- */
 .benefit-title {
   font-weight: 500;
   color: var(--color-navy-blue);
