@@ -70,10 +70,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-/* .nav-menu .logo {
+.nav-menu .logo {
   align-items: center;
   margin-right: 76px;
-} */
+}
 .logo-header {
   color: var(--color-navy-blue);
 }
@@ -318,7 +318,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Portfolio */
+/* ----Portfolio------- */
 .section-portfolio {
   padding: 96px 0 120px;
 }

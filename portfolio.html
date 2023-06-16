@@ -16,28 +16,33 @@
 
 <body>
     <!-- -----------------------Header -->
-    <header>
-        <!-- Navigation -->
-        <nav>
-            <a href="./index.html" class="logo link">Web<span class="logo-header">Studio</span></a>
-            <ul class="list">
-                <li><a href="./index.html" class="nav-link link">Studio</a></li>
-                <li><a href="./portfolio.html" class="nav-link link">Portfolio</a></li>
-                <li><a href="" class="nav-link link">Contacts</a></li>
-            </ul>
-        </nav>
-        <!-- Contacts -->
-        <address class="contacts">
-            <ul class="list">
-                <li><a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="contact-link link">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
-    </header>
+    <header class="header">
+    <!-- Navigation -->
+    <div class="navigation container">
+      <nav class="nav-menu">
+        <a href="./index.html" class="logo link">Web<span class="logo-header">Studio</span></a>
+        <ul class="nav-list list">
+          <li class="nav-list-item"><a href="./index.html" class="nav-link link">Studio</a></li>
+          <li class="nav-list-item"><a href="./portfolio.html" class="nav-link link">Portfolio</a></li>
+          <li class="nav-list-item"><a href="" class="nav-link link">Contacts</a></li>
+        </ul>
+      </nav>
+      <!-- Contacts -->
+      <address class="contacts">
+        <ul class="contacts-list list">
+          <li class="contacts-list-item"><a href="mailto:info@devstudio.com"
+              class="contact-link link">info@devstudio.com</a></li>
+          <li class="contacts-list-item"><a href="tel:+110001111111" class="contact-link link">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </header>
 
     <!-- Main content -->
     <main>
         <section class="section-portfolio">
+        <div class="container">
             <h1 hidden>Portfolio</h1>
             <!-- Filter -->
             <ul class="portfolio-filtr list">
@@ -119,6 +124,7 @@
                     </a>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     <!-- Footer -->
